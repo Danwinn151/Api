@@ -1,0 +1,66 @@
+.card {
+    border-radius: 30px;
+    background: #eaeaea;
+    padding: 2rem;
+    width: 100%;
+    max-width: 420px;
+    background: #222;
+    color: white;
+    margin: 1rem;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    background-image: url('https://images.unsplash.com/photo-1610555356070-d0efb6505f81?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW91bmF0aW5zfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-position: center;
+    background-size: cover;
+    font-size: 120%;
+}
+.search{
+  display: flex;
+  justify-content: center;
+}
+.temp{
+    margin: 0;
+}
+button{
+    margin: 0.5em;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    color: #eaeaea;
+    background: rgb(116, 109, 109);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.search-bar{
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding: 0.6em;
+  background: rgb(81, 74, 74);
+  color: wheat;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+  width: 100%;
+  
+}
+.temp{
+  margin-bottom: 20px;
+}
+.loading{
+  visibility: hidden;
+  max-height:10vh;
+  position: relative;
+}
+.loading::after{
+  visibility: visible;
+  content: "loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
